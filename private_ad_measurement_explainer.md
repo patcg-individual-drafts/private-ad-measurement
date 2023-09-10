@@ -47,7 +47,7 @@ Once this data is downloaded, the device can construct a histogram where each bi
 
 ### Reporting
 
-Each histogram should be reported through a set of Prio nodes that are trusted by the browser. The Prio nodes have two responsibilities. First they aggregate all reports with the same Conversion ID. This means that there is no line level aggregation data on who contributed what to a particular aggregate. (See the original Prio description https://crypto.stanford.edu/prio/paper.pdf for more). Next, at least one of the nodes in the computation *that is not owned by the advertiser* must add noise to the histogram. The generation mechanism and scale of this noise should create appropriate Differential Privacy guarantees. This should be a published mechanism and scale so that signal to noise ratios can be calculated by each advertiser.  
+Each histogram should be reported through a set of Prio nodes that are trusted by the browser. The Prio nodes have two responsibilities. First they aggregate all reports with the same Conversion ID. This means that there is no line level aggregation data on who contributed what to a particular aggregate. (See [the original Prio description](https://crypto.stanford.edu/prio/paper.pdf) for more). Next, at least one of the nodes in the computation *that is not owned by the advertiser* must add noise to the histogram. The generation mechanism and scale of this noise should create appropriate Differential Privacy guarantees. This should be a published mechanism and scale so that signal to noise ratios can be calculated by each advertiser.  
 
 The final result reported to an advertiser will be a histogram showing for each unique Conversion ID approximately what the summed attribution assigned to each relevant advertisement is. The sum is performed over all the users who underwent the particular conversion in a time window and the uncertainty is created by a fixed size noise added by the Prio system.
 
@@ -65,4 +65,4 @@ Because the join of impression and conversion events happens on device, the logi
 
 ### Building on internet standards
 
-Prio type aggregations standards are being drafted by the [<u>IETF Privacy Preserving Measurement Working Group</u>]([https://datatracker.ietf.org/wg/ppm/](https://datatracker.ietf.org/wg/ppm/about/)). Using this type of underlying technology means that ad attribution will benefit from the ecosystem supporting a wide variety of measurements.
+Prio type aggregations standards are being drafted by the [IETF Privacy Preserving Measurement Working Group](https://datatracker.ietf.org/wg/ppm/about/) ([work here](https://datatracker.ietf.org/wg/ppm/)). Using this type of underlying technology means that ad attribution will benefit from the ecosystem supporting a wide variety of measurements.
