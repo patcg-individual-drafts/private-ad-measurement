@@ -1,5 +1,8 @@
 # Explainer for Private Ad Measurement
 
+**This proposal has been superseded by
+[Privacy-Preserving Attribution: Level 1](https://patcg.github.io/ppa-api/) ([repo](https://github.com/patcg/ppa-api)). We’ve left this document in place for future reference, but it is not being pursued at this time.**
+
 ## Introduction
 
 Many websites rely on advertisements to fund their business and advertisers want to understand which of their advertisements and ad placements are most effective at driving business. Users want to browse the web without being tracked. Our goal is to define a system that can measure the effectiveness of advertisements on the Web without tracking users across websites.  
