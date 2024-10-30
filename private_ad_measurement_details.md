@@ -1,5 +1,8 @@
 # Private Ad Measurement
 
+**This proposal has been superseded by
+[Privacy-Preserving Attribution: Level 1](https://patcg.github.io/ppa-api/) ([repo](https://github.com/patcg/ppa-api)). We’ve left this document in place for future reference, but it is not being pursued at this time.**
+
 We propose a system for privacy-preserving ad attribution. We link information between impressions and conversions in the browser and encode them as histograms. Attributions are transmitted using the Prio ([<u>Prio | Stanford Applied Crypto Group</u>](https://crypto.stanford.edu/prio/)) framework to create aggregate reports of those histograms for advertisers. The proposal is intended to handle arbitrary attribution logic and provide Differentially Private (DP) ([<u>Differential Privacy</u>](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/dwork.pdf), [<u>The Algorithmic Foundations
 of Differential Privacy</u>](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf)) guarantees on final aggregates.   
 
